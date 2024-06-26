@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">Leemah<span>Pro.</span></div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#contact" class="contact-btn">Contact Me</a>
+        </div>
+    </header>
+
+    <section id="home" class="home-section">
+        <div class="container">
+            <div class="intro">
+                <h1>Hy! I Am <br> <span>Halimah Kosoko</span></h1>
+                <p>Product designer and digital creative director working in design field for 7 years so far, specialize user interface design.</p>
+                <div class="buttons">
+                    <button class="hire-me">Hire Me</button>
+                    <button class="know-more">Know More</button>
+                </div>
+            </div>
+            <div class="intro-image-container">
+                <div class="intro-image">
+                    <img src="pexels-destiawan-nur-agustra-1011509.jpg" alt="William Harry">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-image-container">
+                    <img src="pexels-destiawan-nur-agustra-1011509.jpg" alt="Arman">
+                </div>
+                <div class="about-text">
+                    <div class="tabs">
+                        <button class="tab-button active" data-tab="life">Life</button>
+                        <button class="tab-button" data-tab="education">Education</button>
+                        <button class="tab-button" data-tab="experience">Experience</button>
+                    </div>
+                    <h3>Who Am I?</h3>
+                    <p>I am a website designer from Nigeria, with a strong focus in UI/UX design and frontend development
+                        I love to get new experiences and always learn from my surroundings.
+                    </p>
+                    
+                    <div class="tab-content active" id="life">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <p>Education details go here. You can add as much content as needed for each tab.</p>
+                    </div>
+                    <div class="tab-content" id="experience">
+                        <p>Experience details go here. You can add as much content as needed for each tab.</p>
+                    </div>
+                    <div class="buttons">
+                        <button class="view-works">View Works</button>
+                        <button class="download-cv">Download CV</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="card">
+                <i class="fas fa-code"></i>
+                <h3>Front End Developer</h3>
+                <p>We provide with a structured course that will teach you.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-paint-brush"></i>
+                <h3>UI/UX Designer</h3>
+                <p>The user interface is the graphical layout..</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-bullseye"></i>
+                <h3>Branding Designer</h3>
+                <p>A Brand Designer is someone who has a genuine..</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h3>Have a Question?</h3>
+            <h2>Contact Me Now</h2>
+        <div class="contact-form">
+            
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Your Email">
+                    <input type="tel" placeholder="Your Phone">
+                    <textarea placeholder="Your Message"></textarea>
+                </div>
+                
+            </form>
+            <button type="submit" class="submit-btn">SUBMIT FORM</button>
+        </div>
+    </section>
+
+    <footer class="sticky-footer">
+        <p>&copy; 2024 Halimah Kosoko</p>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+            
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburger = document.getElementById('hamburger');
+            const navMenu = document.getElementById('nav-menu');
+
+            hamburger.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
